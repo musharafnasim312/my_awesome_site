@@ -1,0 +1,17 @@
+{% extends 'favorites/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <h2>You've been logged out</h2>
+            <p class="mb-4">Thanks for visiting! Would you like to:</p>
+            
+            <div class="d-grid gap-3">
+                <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Log In Again</a>
+                <a href="{% url 'signup' %}" class="btn btn-outline-primary btn-lg">Create New Account</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
